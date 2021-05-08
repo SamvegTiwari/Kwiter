@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>
+        Page
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <link rel="stylesheet" type="text/css" href="kwitter_room.css">
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+</head>
+
+<body style="background: indigo;">
+    <div class="container">
+        <button id="logout" class="glyphicon glyphicon-log-out btn btn-dark">Logout</button>
+        <center>
+            <h1>
+                Kwitter
+            </h1>
+            <br>
+            <br>
+
+            <marquee width="90%" direction="left" height="100px">
+                Kwitter
+            </marquee>
+
+            <h3 class="color_white" id="username_displau"> </h3>
+
+            <br>
+            <br>
+
+            <h3 id="username_line" class="color_white"></h3 <div class="form-group input_div_room_page">
+            <label> Add Room:</label>
+            <input id="room_names_new" class="form-control" placeholder="Enter your room name">;
+            <br>
+            <br>
+            <br>
+            <button id="addroom" class="btn btn-dark" onclick="addroom()"> add room </button>
+    </div>
+    <center>
+        <h3 class="color_white"> ROOMS</h3>
+        <div id="output">
+
+        </div>
+    </center>
+
+
+    </center>
+    </div>
+    <script src="kwitter_room.js"> </script>
+</body>
+
+</html>
